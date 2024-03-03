@@ -61,11 +61,16 @@ mongoose.connect(db_config.DB_URL)
 require("./routes/auth.route")(app)//call routes and passing app object
 require("./routes/category.route")(app)
 /**
- * Start the server
+ * Start the server  on port 5000 or any other
  * 
  */
 
 
+
+
+
+
 app.listen(server_config.PORT,()=>{
-    console.log(`Server Started at port number: ${server_config.PORT}`)
+    console.log(`Server Started at port 8000: ${server_config.PORT}`)
 })
+
